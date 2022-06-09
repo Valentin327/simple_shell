@@ -62,4 +62,4 @@ write (man 2 write)
 
 # Authors
 Valentin ZONGO  
-Celestine Uwanyirigira
+Celestine UWANYIRIGIRA
