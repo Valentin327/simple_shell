@@ -5,7 +5,7 @@ C programming - Write a simple UNIX command interpreter
 ========================================================
 
 
-Project Requirements  
+## Project Requirements  
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89  
 All your files should end with a new line  
 A README.md file, at the root of the folder of the project is mandatory  
@@ -16,11 +16,11 @@ All your header files should be include guarded
 Use system calls only when you need to (why?)  
 Write a README with the description of your project  
 You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker  
-More Info  
-Output  
+## More Info  
+### Output  
 Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.  
 The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)  
-List of allowed functions and system calls  
+### List of allowed functions and system calls  
 access (man 2 access)  
 chdir (man 2 chdir)  
 close (man 2 close)  
