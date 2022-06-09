@@ -5,10 +5,10 @@ C programming - Write a simple UNIX command interpreter
 ========================================================
 
 
-Project Requirements
-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-All your files should end with a new line
-A README.md file, at the root of the folder of the project is mandatory
+Project Requirements  
+All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89  
+All your files should end with a new line  
+A README.md file, at the root of the folder of the project is mandatory  
 A README.md file, at the root of the folder of the project is mandatory
 Your shell should not have any memory leaks
 No more than 5 functions per file
@@ -57,10 +57,10 @@ Compliation
 Testing
 Checks
 Mandatory tasks
-#Repository Contents
+# Repository Contents
 
 
 
-#Authors
+# Authors
 Valentin ZONGO
 Celestine Uwanyirigira
