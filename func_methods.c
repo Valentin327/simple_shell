@@ -143,3 +143,35 @@ char *_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+
+/**
+ * _strdup - returns a pointer to a newly allocated space in memory
+ * @str: string
+ * Return: string
+ */
+char *_strdup(char *str)
+{
+	char *new_str;
+	int i, size = 0;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		size++;
+	}
+	new_str = (char *)malloc(sizeof(char) * size + 1);
+
+	if (new_str == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		new_str[i] = str[i];
+	}
+	new_str[i] = '\0';
+	return (new_str);
+}
