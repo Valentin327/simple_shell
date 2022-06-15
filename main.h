@@ -38,5 +38,8 @@ int _strcmp(char *s1, char *s2);
 char *_strcat(char *dest, char *src);
 char *_strdup(char *str);
 char *_strtok(char *strToDiv, char *delim);
-
+int _strlen(char *str);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *str);
+char *convert_integer(int number);
 #endif
