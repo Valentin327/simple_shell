@@ -32,5 +32,11 @@ typedef struct varInput
 
 size_t _getline(char **buf);
 char *_strtok(char *line, char *delim);
+char **_tokenizer(char *buf, char *delimitChar);
+void *_realloc(void *ptr, unsigned int prevSize, unsigned int newSize);
+int _strcmp(char *s1, char *s2);
+char *_strcat(char *dest, char *src);
+char *_strdup(char *str);
+char *_strtok(char *strToDiv, char *delim);
 
 #endif
