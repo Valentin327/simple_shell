@@ -30,7 +30,7 @@ int _strcmp(char *s1, char *s2)
  * @newSize: size of the new memory block
  * Return: pointer to the newly allocated memory block
  */
-void * _realloc(void *ptr, unsigned int prevSize, unsigned int newSize)
+void *_realloc(void *ptr, unsigned int prevSize, unsigned int newSize)
 {
 	char *ptr1;
 	char *prevPtr;
@@ -71,4 +71,48 @@ void * _realloc(void *ptr, unsigned int prevSize, unsigned int newSize)
 	}
 	free(prevPtr);
 	return (ptr1);
+}
+
+/**
+ * _strtok - function that divides a string with a delimiter
+ * @strToDiv: string to divide
+ * @delim: delimiter
+ * Return: copystr
+ */
+char *_strtok(char *strToDiv, char *delim)
+{
+	int j;
+	static char *str;
+	char *copystr;
+
+	if (strToDiv != NULL)
+	{
+		str = strToDiv;
+	}
+	for (; *str != '\0'; str++)
+	{
+		for (j = 0; delim[j] != '\0'; j++)
+		{
+			if (*str == delim[j])
+				break;
+		}
+		if (delim[j] == '\0')
+			break;
+	}
+	copystr = str;
+	if (*copystr == '\0')
+		return (NULL);
+	for (; *str != '\0'; str++)
+	{
+		for (j = 0; delim[j] != '\0'; j++)
+		{
+			if (*str == delim[j])
+			{
+				*str = '\0';
+				str++;
+				return (copystr);
+			}
+		}
+	}
+	return (copystr);
 }
