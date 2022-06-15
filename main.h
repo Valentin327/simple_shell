@@ -31,5 +31,6 @@ typedef struct varInput
 } input_v;
 
 size_t _getline(char **buf);
+char *_strtok(char *line, char *delim);
 
 #endif

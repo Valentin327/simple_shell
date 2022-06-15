@@ -21,7 +21,7 @@ char **_tokenizer(char *buf, char *delimitChar)
 	{
 		return (NULL);
 	}
-	while ((token[i] = _strtok(buffer, delimiter)) != NULL)
+	while ((token[i] = _strtok(buf, delimitChar)) != NULL)
 	{
 		i++;
 		if (i == mcount)
