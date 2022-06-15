@@ -30,6 +30,19 @@ typedef struct varInput
 	int exitstatus;
 } input_v;
 
+/**
+ * struct com_struct - struct
+ * @name: name
+ * @p: p
+ * typedef command_v: new name struct
+ */
+typedef struct com_struct
+{
+	char *name;
+	int (*p)(input_v *, char **);
+} command_v;
+
+
 size_t _getline(char **buf);
 char *_strtok(char *line, char *delim);
 char **_tokenizer(char *buf, char *delimitChar);
